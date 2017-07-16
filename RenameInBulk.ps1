@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Filter "*current*" -Recurse | Rename-Item -NewName {$_.Name -replace 'current', 'old'}
